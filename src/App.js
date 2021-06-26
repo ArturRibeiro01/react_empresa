@@ -21,6 +21,7 @@ function App() {
         <Route path="/precos" component={Prices} />
         <Route path="/contato" component={Contacts} />
 
+        {/* Admin */}
         <Route path="/area_admin" component={Admin} />
 
         <Footer />
