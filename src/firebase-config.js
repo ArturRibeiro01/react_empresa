@@ -3,7 +3,7 @@ const firebase = require("firebase");
 const rebase = require("re-base");
 
 // Variável que armazena os dados da API.
-const FirebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyBmyA_wQ9tqEK24HHJA9Vs-xJws1OYuEBc",
   authDomain: "appcompanyreact.firebaseapp.com",
   databaseURL: "https://appcompanyreact-default-rtdb.firebaseio.com",
@@ -16,7 +16,7 @@ const FirebaseConfig = {
 
 // firebase.analytics();
 
-const app = firebase.initializeApp(FirebaseConfig);
+const app = firebase.initializeApp(firebaseConfig);
 const config = rebase.createClass(app.database());
 
 export default config;
