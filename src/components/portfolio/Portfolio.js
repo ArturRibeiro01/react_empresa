@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import config from "../../firebase-config";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -8,8 +7,6 @@ class Portfolio extends Component {
     this.state = {
       portfolio: {},
     };
-
-    config.syncState("portfolio");
   }
 
   render() {
